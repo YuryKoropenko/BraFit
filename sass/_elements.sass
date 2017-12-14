@@ -1,0 +1,296 @@
+@import "bourbon/bourbon"
+@import "sass/_blocks"
+
+/*Компоненты*/
+
+.h-logo
+	display: inline-block
+	position: relative
+	&__img
+		display: block
+		max-width: 100%
+		height: auto
+	&__description
+		position: absolute
+		bottom: -30px
+		left: -50px
+		right: -50px
+		text-align: center
+		width: auto
+		text-align: center
+		display: block
+		font-size: 18px
+		color: #686868
+
+.h-prof
+	display: inline-block
+	margin-left: 20px
+	color: #686868
+	position: relative
+	&:hover, &:focus, &:active
+		text-decoration: underline
+		color: #686868
+	&:active
+		text-decoration: none
+	&::after
+		content: ''
+		width: 14px
+		height: 17px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-image: url(../img/icon/1.png)
+		position: absolute
+		display: block
+		left: -20px
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+
+.h-basket
+	display: inline-block
+	margin-left: 28px
+	color: #686868
+	position: relative
+	&:hover, &:focus, &:active
+		text-decoration: underline
+		color: #686868
+	&:active
+		text-decoration: none
+	&::after
+		content: ''
+		width: 20px
+		height: 15px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-image: url(../img/icon/2.png)
+		position: absolute
+		display: block
+		left: -28px
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+
+.h-nav
+	font-size: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	padding: 0 40px
+	&__item
+		display: inline-block
+		&:hover
+			.h-nav__link
+				color: #686868
+				text-decoration: none
+				color: #c3a6e3
+	&__item.active
+		position: relative
+		.h-nav__link
+			font-family: "OpenSansBold", sans-serif
+			color: #c3a6e3
+		&::after
+			content: ''
+			height: 5px
+			width: 100%
+			left: 0
+			right: 0
+			bottom: 0
+			position: absolute
+			display: block
+			background-color: #c6a9e6
+	&__link
+		color: #686868
+		font-size: 18px
+		display: block
+		line-height: 48px
+		&:hover, &:focus, &:active
+			color: #686868
+			text-decoration: none
+
+.p-filter
+	padding: 11px 22px
+	background-image: url(../img/icon/patern.png)
+	background-position: 0 0
+	background-color: #d1bcea
+	border-radius: 1px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	&__title
+		display: inline-block
+		color: #fff
+		font-size: 18px
+		font-family: "OpenSansSemibold", sans-serif
+		line-height: 40px
+	&__input
+		height: 40px
+		border: 1px solid #c4a8e5
+		padding: 0 10px
+		font-size: 14px
+		font-family: "OpenSansRegular", sans-serif
+		color: #686868
+		background-color: #fff
+		&::-webkit-input-placeholder
+			opacity: 1
+			color: #9e9e9e
+			font-family: "OpenSansItalic", sans-serif
+		&::-moz-placeholder
+			opacity: 1
+			color: #9e9e9e
+			font-family: "OpenSansItalic", sans-serif
+		&:-moz-placeholder
+			opacity: 1
+			color: #9e9e9e
+			font-family: "OpenSansItalic", sans-serif
+		&:-ms-input-placeholder
+			opacity: 1
+			color: #9e9e9e
+			font-family: "OpenSansItalic", sans-serif
+	&__button
+		height: 40px
+		border: 1px solid #c4a8e5
+		padding: 0 18px
+		font-size: 14px
+		text-transform: uppercase
+		border: 1px solid #fff
+		font-family: "OpenSansRegular", sans-serif
+		color: #6d6d6d
+		background-color: #e7e7e7
+		-webkit-box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.11)
+		-moz-box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.11)
+		box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.11)
+	&__inst
+		line-height: 40px
+		display: inline-block
+		text-decoration: none
+		color: #fff
+		font-size: 14px
+		text-decoration: underline
+		&:hover, &:focus, &:active
+			color: #fff
+			text-decoration: none
+		&:active
+			text-decoration: underline
+
+.p-slider
+	border-top: 1px solid #c4a8e5
+	border-bottom: 1px solid #c4a8e5
+	&__item
+		.row
+			background-repeat: no-repeat
+			background-position: right center
+			height: 400px
+	&__content
+		padding-top: 61px
+	&__title
+		font-size: 48px
+		color: #c4a8e5
+		display: block
+		text-transform: uppercase
+		font-family: "OpenSansSemibold", sans-serif
+		span
+			display: block
+			font-size: 36px
+			font-family: "OpenSansLight", sans-serif
+	&__description
+		color: #676767
+		display: block
+		font-family: "OpenSansLight", sans-serif
+		padding-top: 24px
+		padding-bottom: 40px
+	&__button
+		display: inline-block
+		height: 40px
+		background-color: #c4a8e5
+		border-radius: 2px
+		font-size: 18px
+		color: #fff
+		line-height: 40px
+		padding: 0 25px
+		margin-left: 84px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #fff
+
+.p-categories
+	position: relative
+	height: 280px
+	overflow: hidden
+	border: 1px solid #85729b
+	display: block
+	&:hover
+		.p-categories__wrapper
+			bottom: 0
+			text-align: center
+			background-color: rgba(#644e7e,.65)
+		.p-categories__title
+			display: block
+			position: absolute
+			top: 50%
+			left: 0
+			right: 0
+			text-align: center
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+		.p-categories__button
+			background-color: #fff
+			color: #c4a8e5
+	&__img
+		display: block
+		width: 100%
+	&__wrapper
+		@include transition(all 0.3s ease-in-out)
+		background-color: rgba(#000,.32)
+		padding: 10px 20px
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		text-align: left
+		display: block
+	&__title
+		font-size: 24px
+		font-family: "OpenSansSemibold", sans-serif
+		color: #fff
+		display: inline-block
+		z-index: 1
+	&__button
+		@include transition(all 0.3s ease-in-out)
+		display: inline-block
+		height: 40px
+		background-color: #c4a8e5
+		border-radius: 2px
+		font-size: 18px
+		color: #fff
+		line-height: 40px
+		padding: 0 25px
+		bottom: 40px
+		text-transform: uppercase
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #fff
+		&-wp
+			position: absolute
+			bottom: 40px
+			left: 0
+			right: 0
+			text-align: center
+
+.p-pickingsalon
+	&__title
+		display: block
+		text-align: center
+		font-size: 30px
+		color: #fff
+		text-transform: uppercase
+		font-family: "OpenSansSemibold", sans-serif

@@ -1,0 +1,80 @@
+@import "bourbon/bourbon"
+@import "sass/_custom"
+
+/*Внешние блоки*/
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "OpenSansRegular", sans-serif
+	overflow-x: hidden
+
+.header
+	&__top
+		padding-bottom: 20px
+		padding-top: 47px
+	&__h-logo
+		text-align: center
+	&__right
+		padding-top: 113px
+		text-align: right
+	&__h-prof
+	&__h-basket
+	&__bottom
+		height: 50px
+		border-top: 1px solid #c4a8e5
+		border-bottom: 1px solid #e0e0e0
+		background-image: url(../img/icon/patern.png)
+		background-repeat: repeat
+		background-position: 0 0
+	&__h-nav
+
+.page
+	&__p-filter
+		padding: 40px 0
+	&__p-slider
+		padding-bottom: 50px
+	&__p-categories
+		padding-bottom: 50px
+	&__categories
+		.row
+			margin-left: -25px
+			margin-right: -25px
+		.col-md-6
+			padding-left: 25px
+			padding-right: 25px
+	&__pickingsalon
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: auto 160%
+		position: relative
+		padding-top: 40px
+		padding-bottom: 50px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			display: block
+			background-color: rgba(#755aa2,.54)
+	&__p-pickingsalon
+		position: relative
+		z-index: 1
+		padding-bottom: 36px
+		&-center
+			text-align: center
+		&-left
+			text-align: right
+			.p-filter__input
+				width: 70%
+		&-right
+			text-align: left
+			.p-filter__input
+				width: 70%
