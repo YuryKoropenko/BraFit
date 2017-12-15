@@ -27,6 +27,10 @@
 	margin-left: 20px
 	color: #686868
 	position: relative
+	&:nth-child(2)
+		margin-left: 0
+		&::after
+			display: none
 	&:hover, &:focus, &:active
 		text-decoration: underline
 		color: #686868
@@ -114,18 +118,22 @@
 			text-decoration: none
 
 .p-filter
-	padding: 11px 22px
+	padding: 11px 35px
 	background-image: url(../img/icon/patern.png)
 	background-position: 0 0
 	background-color: #d1bcea
 	border-radius: 1px
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	justify-content: space-between
-	-webkit-justify-content: space-between
+	display: block
+	@include clearfix
+	&__item
+		float: left
+		display: block
+		padding-left: 20px
+		&-wp
+			padding-left: 20px
+			float: left
+		&:first-child
+			padding-left: 0
 	&__title
 		display: inline-block
 		color: #fff
@@ -186,6 +194,9 @@
 	border-top: 1px solid #c4a8e5
 	border-bottom: 1px solid #c4a8e5
 	&__item
+		height: 400px
+		background-repeat: no-repeat
+		background-position: 80% center
 		.row
 			background-repeat: no-repeat
 			background-position: right center
@@ -294,3 +305,126 @@
 		color: #fff
 		text-transform: uppercase
 		font-family: "OpenSansSemibold", sans-serif
+
+.f-subtitle
+	font-size: 18px
+	font-family: "OpenSansSemibold", sans-serif
+	color: #444
+	letter-spacing: 0.025em
+
+.f-nav
+	padding: 10px 0
+	&-info
+		.f-nav__item
+			padding: 10px 0
+	&__item
+		display: block
+		text-align: left
+	&__link
+		display: inline-block
+		color: #686868
+		padding: 5px 0
+		font-size: 14px
+		letter-spacing: 0.025em
+		&:hover, &:focus, &:active
+			text-decoration: underline
+			color: #686868
+		&:active
+			text-decoration: none
+	&__adr
+		padding-left: 22px
+		position: relative
+		font-size: 14px
+		line-height: 14px
+		letter-spacing: 0.025em
+		display: block
+		&::before
+			content: ''
+			width: 16px
+			height: 13px
+			display: block
+			background-repeat: no-repeat
+			background-position: center center
+			background-image: url(../img/icon/3.png)
+			position: absolute
+			left: 0
+			top: 0
+
+	&__phone
+		padding-left: 22px
+		position: relative
+		font-size: 14px
+		line-height: 14px
+		letter-spacing: 0.025em
+		display: block
+		&::before
+			content: ''
+			width: 16px
+			height: 13px
+			display: block
+			background-repeat: no-repeat
+			background-position: center center
+			background-image: url(../img/icon/4.png)
+			position: absolute
+			left: 0
+			top: 0
+
+	&__email
+		padding-left: 22px
+		position: relative
+		font-size: 14px
+		line-height: 14px
+		letter-spacing: 0.025em
+		display: block
+		&::before
+			content: ''
+			width: 16px
+			height: 13px
+			display: block
+			background-repeat: no-repeat
+			background-position: center center
+			background-image: url(../img/icon/5.png)
+			position: absolute
+			left: 0
+			top: 0
+
+.f-logo
+	display: inline-block
+	&__img
+		max-width: 100%
+		height: auto
+		display: block
+.f-soc
+	font-size: 0
+	text-align: center
+	&__item
+		display: inline-block
+		padding: 0 6px
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+	&__link
+		width: 21px
+		display: block
+		height: 21px
+		background-color: #c4a8e5
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-position: center center
+
+.f-copy
+	color: #686868
+	font-size: 12px
+	line-height: 24px
+	letter-spacing: 0.025em
+	display: inline-block
+
+.h-mobmenu
+	width: 20px
+	height: 18px
+	background-image: url(../img/icon/mob-menu.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	display: block
