@@ -24,8 +24,6 @@
   }
   .header__right {
     padding-top: 0;
-    margin-left: -40px;
-    margin-top: -40px;
   }
   .h-nav__link {
     font-size: 16px;
@@ -87,6 +85,9 @@
   .page__p-pickingsalon-left .p-filter__input {
     width: 100%;
   }
+  .header__top {
+    padding-top: 15px;
+  }
   /**/
 }
 
@@ -98,9 +99,6 @@
   }
   .header__right {
     margin-left: -190px;
-  }
-  .header__h-mobmenu {
-    margin-top: -40px;
   }
   .h-nav {
     display: block;
@@ -124,15 +122,18 @@
   }
   .p-filter__item-wp {
     width: 50%;
+    padding: 0 15px;
   }
   .p-filter__item-wp .p-filter__item {
     width: 100%;
+    padding-right: 0;
   }
   .p-filter__item-wp .p-filter__item .p-filter__input {
     width: 100%;
   }
   .p-filter__item {
     width: 50%;
+    padding: 0 15px;
   }
   .p-filter__item .p-filter__button {
     width: 100%;
@@ -149,6 +150,76 @@
   .page__p-pickingsalon {
     padding-bottom: 20px;
   }
+  .page__categories .row, .page__pickingsalon .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .page__categories .col-md-6, .page__pickingsalon .col-md-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .p-filter {
+    padding: 15px 0 !important;
+  }
+  .page__p-filter {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  .page__p-categories {
+    padding-bottom: 40px;
+  }
+  .page__pickingsalon {
+    padding: 40px 0;
+  }
+  .footer {
+    margin-top: 40px;
+    padding-top: 30px;
+  }
+  .p-slider__description {
+    display: none;
+  }
+  .p-slider__title {
+    padding-bottom: 30px;
+    font-size: 40px;
+  }
+  .p-slider__title span {
+    font-size: 24px;
+  }
+  .p-slider__button {
+    margin-left: 30px;
+  }
+  .p-slider__content {
+    width: 64%;
+    padding-top: 20px;
+  }
+  .p-slider__item {
+    height: 278px;
+  }
+  .p-filter__item-title {
+    padding-left: 15px !important;
+  }
+  .f-nav__link,
+  .f-nav-info .f-nav__item {
+    padding: 3px 0;
+  }
+  .f-soc__item {
+    padding: 0 3px;
+  }
+  .f-nav__phone {
+    white-space: nowrap;
+  }
+  .f-soc {
+    text-align: right;
+  }
+  .p-slider__item {
+    background-size: auto 160%;
+  }
+  .h-nav__item {
+    text-align: center;
+  }
+  .header__bottom {
+    margin-bottom: 40px;
+  }
   /**/
 }
 
@@ -160,6 +231,11 @@
   }
   .p-filter__item .p-filter__button {
     margin-top: 10px;
+  }
+  .h-logo__description {
+    bottom: -40px;
+    left: 0;
+    right: 0;
   }
   /**/
 }
