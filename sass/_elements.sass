@@ -463,3 +463,113 @@
 		font-size: 14px
 		font-family: "OpenSansLight", sans-serif
 		color: #c6a9e6
+
+.b-filter
+	font-size: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	background-color: #c6a9e6
+	&__item
+		padding: 0 20px
+		position: relative
+		&-active
+			.b-filter__link
+				color: #946bc1 !important
+				&::after
+					background-position: right center
+	&__link
+		font-size: 18px
+		color: #fff
+		font-family: "OpenSansBold", sans-serif
+		padding: 14px 0
+		display: block
+		padding-right: 20px
+		position: relative
+		letter-spacing: 0.1em
+		&::after
+			content: ''
+			width: 13px
+			height: 7px
+			background-position: left center
+			background-size: auto 100%
+			display: block
+			background-image: url(../img/icon/filter.png)
+			background-repeat: no-repeat
+			position: absolute
+			right: 0
+			top: 24px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #fff
+	&__list
+		position: absolute
+		left: 0
+		top: 100%
+		background-color: #f6f6f6
+		z-index: 10
+		display: none
+	&__subitem
+		border-bottom: 1px solid #ebebeb
+		width: 298px
+		&-active
+			.b-filter__sublink
+				font-family: "OpenSansBold", sans-serif
+				color: #c6a9e6 !important
+	&__sublink
+		font-size: 18px
+		letter-spacing: 0.1em
+		display: block
+		padding: 5px 8px
+		color: #686868
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #686868
+	&__table
+		&-top
+			font-size: 12px
+			td
+				height: 28px
+				width: 48px
+				border-bottom: 1px solid #ebebeb
+				border-right: 1px solid #ebebeb
+		&-content
+			font-size: 12px
+
+.p-catalog
+	display: block
+	&:hover, &:focus, &:active
+		text-decoration: none
+		color: inherit
+	&__top
+	&__img
+		display: block
+		width: 100%
+		height: auto
+	&__bottom
+		padding-top: 16px
+	&__title
+		display: block
+		width: 100%
+		font-size: 14px
+		color: #686868
+	&__firm
+		display: block
+		width: 100%
+		text-transform: uppercase
+		color: #c6a9e6
+		font-size: 12px
+	&__price
+		display: block
+		width: 100%
+		text-align: right
+		color: #686868
+		font-size: 14px
+		font-family: "OpenSansBold", sans-serif
+		&::after
+			content: 'р.'
+			text-transform: uppercase
