@@ -903,6 +903,10 @@ body {
   padding-right: 0;
 }
 
+.p-path__item:last-child:after {
+  display: none;
+}
+
 .p-path__link {
   color: #8b8b8b;
   text-decoration: underline;
@@ -1004,19 +1008,54 @@ body {
   color: #686868;
 }
 
+.b-filter__table {
+  width: 100%;
+  table-layout: fixed;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
 .b-filter__table-top {
   font-size: 12px;
 }
 
 .b-filter__table-top td {
   height: 28px;
-  width: 48px;
+  padding: 10px 0 0 0;
   border-bottom: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
+  text-align: center;
+  color: #c6a9e6;
+  font-family: "OpenSansBold", sans-serif;
+  width: 50px;
+}
+
+.b-filter__table-top td:last-child {
+  border-right: none;
 }
 
 .b-filter__table-content {
   font-size: 12px;
+}
+
+.b-filter__table-content td {
+  width: 50px;
+  height: 24px;
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  text-align: center;
+  padding-top: 5px;
+  color: #686868;
+}
+
+.b-filter__table-content td:first-child {
+  color: #c6a9e6;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+.b-filter__table-content td:last-child {
+  border-right: none;
 }
 
 .p-catalog {
@@ -1026,6 +1065,34 @@ body {
 .p-catalog:hover, .p-catalog:focus, .p-catalog:active {
   text-decoration: none;
   color: inherit;
+}
+
+.p-catalog:hover .p-catalog__top::after, .p-catalog:focus .p-catalog__top::after, .p-catalog:active .p-catalog__top::after {
+  background-color: rgba(100, 78, 126, 0.65);
+}
+
+.p-catalog:hover .p-catalog__button, .p-catalog:focus .p-catalog__button, .p-catalog:active .p-catalog__button {
+  display: block;
+}
+
+.p-catalog__top {
+  position: relative;
+  height: 275px;
+  overflow: hidden;
+}
+
+.p-catalog__top::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  position: absolute;
 }
 
 .p-catalog__img {
@@ -1065,4 +1132,25 @@ body {
 .p-catalog__price::after {
   content: 'р.';
   text-transform: uppercase;
+}
+
+.p-catalog__button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  z-index: 2;
+  width: 120px;
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #ebebeb;
+  font-size: 18px;
+  color: #c6a9e6;
+  display: none;
 }
