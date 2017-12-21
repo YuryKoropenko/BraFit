@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Заголовок</title>
+<!--
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- End_Styles -->
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+						<div class="header__h-mobmenu">
+							<a href="#" class="h-mobmenu"></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-push-9 col-sm-12 col-xs-6">
+						<!-- Не авторизированный пользователь -->
+						<div class="header__right">
+							<div class="header__h-prof">
+								<a href="#" class="h-prof">
+									Войти
+								</a>
+								/
+								<a href="#" class="h-prof">
+									Регистрация
+								</a>
+							</div>
+							<div class="header__h-basket">
+								<a href="#" class="h-basket">
+									Корзина
+								</a>
+							</div>
+						</div>
+						<!-- Авторизированный пользователь -->
+						<!--
+						<div class="header__right">
+							<div class="header__h-prof">
+								<a href="#" class="h-prof">
+									Здравствуйте, Кристина
+								</a>
+							</div>
+							<div class="header__h-basket">
+								<a href="#" class="h-basket">
+									Корзина (1) 1500 р.
+								</a>
+							</div>
+						</div>
+						-->
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="header__h-logo">
+							<a href="#" class="h-logo">
+								<img src="img/h-logo.png" alt="brafit" class="h-logo__img">
+								<span class="h-logo__description">
+									Салон по подбору белья для большой груди
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="header__h-nav">
+							<ul class="h-nav">
+								<li class="h-nav__item active">
+									<a href="#" class="h-nav__link">
+										Каталог
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										По размеру
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Оплата и доставка
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Возврат и обмен
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Контакты
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Личный кабинет
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page">
+		<div class="page__path">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-path">
+							<ul class="p-path">
+								<li class="p-path__item">
+									<a href="#" class="p-path__link">
+										Каталог
+									</a>
+								</li>
+								<li class="p-path__item">
+									<span class="p-path__text">
+										Бюстгалтеры
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="page__p-card p-card-left">
+							<div class="p-card__slider owl-carousel">
+								<div class="p-card__item">
+									<img src="img/slider/2.jpg" alt="alt" class="p-card__img">
+								</div>
+								<div class="p-card__item">
+									<img src="img/slider/2.jpg" alt="alt" class="p-card__img">
+								</div>
+								<div class="p-card__item">
+									<img src="img/slider/2.jpg" alt="alt" class="p-card__img">
+								</div>
+							</div>
+							<div class="p-card__pagin">
+								<div class="p-card__side">
+									<img src="img/slider/2.jpg" alt="alt" class="p-card__img">
+								</div>
+								<div class="p-card__side">
+									<img src="img/slider/2.jpg" alt="alt" class="p-card__img">
+								</div>
+								<div class="p-card__side">
+									<img src="img/slider/2.jpg" alt="alt" class="p-card__img">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="page__p-card p-card-right">
+							<h2 class="p-card__title">
+								Curvy Kate Tropics Balcony Bra (Iris Print)
+							</h2>
+							<div class="p-card__sub">
+								<span>
+									Артикул: CK5901IP
+								</span>
+								<span>
+									Бренд: Curvy Kate
+								</span>
+							</div>
+							<div class="p-card__price">
+								4 800
+							</div>
+							<div class="p-card__block">
+								<b class="p-card__subtitle">
+									Выбрать размер
+								</b>
+								<div class="p-card__list">
+									<div class="p-card__radio">
+										<input type="radio" id="radio1" name="rad1" />
+										<label for="radio1">75</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio2" name="rad1" />
+										<label for="radio2">80</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio3" name="rad1" />
+										<label for="radio3">85</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio6" name="rad1" />
+										<label for="radio6">90</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio4" name="rad1" />
+										<label for="radio4">95</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio5" name="rad1" />
+										<label for="radio5">100</label>
+									</div>
+								</div>
+							</div>
+							<div class="p-card__block">
+								<b class="p-card__subtitle">
+									Выбрать чашку
+								</b>
+								<div class="p-card__list">
+									<div class="p-card__radio">
+										<input type="radio" id="radio11" name="rad1" />
+										<label for="radio11">D</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio22" name="rad1" />
+										<label for="radio22">DD</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio33" name="rad1" />
+										<label for="radio33">E</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio66" name="rad1" />
+										<label for="radio66">EE</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio44" name="rad1" />
+										<label for="radio44">F</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio55" name="rad1" />
+										<label for="radio55">FF</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio11" name="rad1" />
+										<label for="radio11">GG</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio22" name="rad1" />
+										<label for="radio22">H</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio33" name="rad1" />
+										<label for="radio33">HH</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio66" name="rad1" />
+										<label for="radio66">J</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio44" name="rad1" />
+										<label for="radio44">JJ</label>
+									</div>
+									<div class="p-card__radio">
+										<input type="radio" id="radio55" name="rad1" />
+										<label for="radio55">K</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="footer__f-subtitle">
+						<b class="f-subtitle">
+							BraFit
+						</b>
+					</div>
+					<div class="footer__f-nav">
+						<ul class="f-nav">
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									О магазине
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Оплата и доставка
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Возврат и обмен
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Личный кабинет
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="footer__f-subtitle">
+						<b class="f-subtitle">
+							Каталог
+						</b>
+					</div>
+					<div class="footer__f-nav">
+						<ul class="f-nav">
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Бюстгальтеры
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Спортивные бюстгальтеры
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Купальники
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Скидки
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Новинки
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="footer__f-subtitle">
+						<b class="f-subtitle">
+							Контакты
+						</b>
+					</div>
+					<div class="footer__f-nav">
+						<ul class="f-nav f-nav-info">
+							<li class="f-nav__item">
+								<span class="f-nav__adr">
+									49 Archdale, 2B Charleston
+								</span>
+							</li>
+							<li class="f-nav__item">
+								<span class="f-nav__phone">
+									+777 (100) 1234
+								</span>
+							</li>
+							<li class="f-nav__item">
+								<span class="f-nav__email">
+									mail@example.com
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="footer__f-logo">
+						<a href="#" class="f-logo">
+							<img src="img/f-logo.png" alt="brafit" class="f-logo__img">
+						</a>
+					</div>
+					<div class="footer__f-soc">
+						<ul class="f-soc">
+							<li class="f-soc__item">
+								<a href="#" class="f-soc__link" style="background-image: url(img/social/1.png);"></a>
+							</li>
+							<li class="f-soc__item">
+								<a href="#" class="f-soc__link" style="background-image: url(img/social/2.png);"></a>
+							</li>
+							<li class="f-soc__item">
+								<a href="#" class="f-soc__link" style="background-image: url(img/social/3.png);"></a>
+							</li>
+							<li class="f-soc__item">
+								<a href="#" class="f-soc__link" style="background-image: url(img/social/4.png);"></a>
+							</li>
+							<li class="f-soc__item">
+								<a href="#" class="f-soc__link" style="background-image: url(img/social/5.png);"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__f-copy">
+						<p class="f-copy">
+							© BraFit, 2017
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="popup popup-manual" id="popupmanual">
+		<div class="popup__wrapper">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae deserunt asperiores, accusantium expedita dolores quidem dolore aliquid similique dolorum soluta ad numquam sint quam rerum doloribus nam quas. Beatae, at!
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="libs/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- End_Scripts -->
+</body>
+</html>

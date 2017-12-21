@@ -72,3 +72,37 @@ input[type="number"]::-webkit-inner-spin-button
 	&:active
 		background-color: #fff
 		color: #634389
+
+.owl-nav
+	div
+		text-indent: -9999px
+		width: 30px
+		height: 30px
+		background-color: #b8b8b8
+		position: absolute
+		top: 50%
+		margin-top: -15px
+		z-index: 2
+.owl-prev
+	left: 20px
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		@include triangle(19px, #fff, left)
+		left: 50%
+		transform: translateX(-50%)
+		-webkit-transform: translateX(-50%)
+		top: 5.5px
+
+.owl-next
+	right: 20px
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		@include triangle(19px, #fff, right)
+		left: 50%
+		transform: translateX(-50%)
+		-webkit-transform: translateX(-50%)
+		top: 5.5px

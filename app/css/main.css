@@ -85,6 +85,55 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #634389;
 }
 
+.owl-nav div {
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  background-color: #b8b8b8;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  z-index: 2;
+}
+
+.owl-prev {
+  left: 20px;
+}
+
+.owl-prev::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-bottom: 9.5px solid transparent;
+  border-right: 9.5px solid #fff;
+  border-top: 9.5px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  top: 5.5px;
+}
+
+.owl-next {
+  right: 20px;
+}
+
+.owl-next::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-bottom: 9.5px solid transparent;
+  border-left: 9.5px solid #fff;
+  border-top: 9.5px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  top: 5.5px;
+}
+
 /*Внешние блоки*/
 body {
   font-size: 16px;
@@ -1153,4 +1202,107 @@ body {
   font-size: 18px;
   color: #c6a9e6;
   display: none;
+}
+
+.p-card__slider .owl-dots {
+  display: none;
+}
+
+.p-card__item .p-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.p-card__pagin {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 20px;
+}
+
+.p-card__side {
+  width: 33.333333%;
+  float: left;
+  padding: 0 10px;
+}
+
+.p-card__side .p-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.p-card__title {
+  display: block;
+  width: 100%;
+  color: #686868;
+  font-size: 24px;
+  font-family: "OpenSansBold", sans-serif;
+  padding-bottom: 5px;
+}
+
+.p-card__sub span {
+  display: block;
+  width: 100%;
+  color: #686868;
+  font-size: 14px;
+  font-family: "OpenSansLight", sans-serif;
+}
+
+.p-card__price {
+  color: #c5a8e5;
+  font-size: 24px;
+  font-family: "OpenSansBold", sans-serif;
+  display: block;
+  padding-top: 5px;
+}
+
+.p-card__price::after {
+  content: 'руб.';
+}
+
+.p-card__block {
+  padding-top: 14px;
+}
+
+.p-card__subtitle {
+  color: #686868;
+  font-size: 20px;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+.p-card__list {
+  width: auto;
+  font-size: 0;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.p-card__radio {
+  display: inline-block;
+  padding: 8px 8px 0;
+}
+
+.p-card__radio input[type="radio"] {
+  display: none;
+}
+
+.p-card__radio input[type="radio"]:checked + label {
+  background-color: transparent;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+.p-card__radio label {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #a1a1a1;
+  background-color: #a1a1a1;
+  font-size: 18px;
+  display: block;
+  line-height: 38px;
+  text-align: center;
+  color: #686868;
+  cursor: pointer;
 }

@@ -8,6 +8,14 @@ $(function() {
 		items:1
 	});
 
+	$('.p-card__slider').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		items:1,
+		dotsContainer: '.p-card__pagin'
+	});
+
 	/*инструкция*/
 	$('.p-filter__inst').fancybox();
 

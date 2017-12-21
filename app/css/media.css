@@ -91,6 +91,15 @@
   .p-catalog__top {
     height: 266px;
   }
+  .b-filter__item {
+    padding: 0 5px;
+  }
+  .b-filter__link {
+    padding-right: 14px;
+  }
+  .b-filter__table-top td {
+    width: 40px;
+  }
   /**/
 }
 
@@ -222,6 +231,39 @@
   }
   .header__bottom {
     margin-bottom: 40px;
+  }
+  .b-filter__list {
+    width: 290px;
+    overflow-x: scroll;
+  }
+  .b-filter {
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+  .b-filter__item {
+    display: inline-block;
+  }
+  .b-filter__link {
+    padding: 8px 14px 8px 0;
+  }
+  .b-filter__link::after {
+    top: 18px;
+  }
+  .b-filter__item {
+    position: static;
+  }
+  .b-filter__subitem {
+    width: 100%;
+  }
+  .p-catalog__top {
+    height: 162px;
+  }
+  .p-catalog__img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
   }
   /**/
 }

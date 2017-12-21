@@ -639,3 +639,81 @@
 		font-size: 18px
 		color: #c6a9e6
 		display: none
+
+.p-card
+	&__slider
+		.owl-dots
+			display: none
+	&__item
+		.p-card__img
+			display: block
+			width: 100%
+			height: auto
+	&__pagin
+		margin-left: -10px
+		margin-right: -10px
+		padding-top: 20px
+	&__side
+		width: 33.333333%
+		float: left
+		padding: 0 10px
+		.p-card__img
+			display: block
+			width: 100%
+			height: auto
+			cursor: pointer
+
+.p-card
+	&__title
+		display: block
+		width: 100%
+		color: #686868
+		font-size: 24px
+		font-family: "OpenSansBold", sans-serif
+		padding-bottom: 5px
+	&__sub
+		span
+			display: block
+			width: 100%
+			color: #686868
+			font-size: 14px
+			font-family: "OpenSansLight", sans-serif
+	&__price
+		color: #c5a8e5
+		font-size: 24px
+		font-family: "OpenSansBold", sans-serif
+		display: block
+		padding-top: 5px
+		&::after
+			content: 'руб.'
+	&__block
+		padding-top: 14px
+	&__subtitle
+		color: #686868
+		font-size: 20px
+		font-family: "OpenSansBold", sans-serif
+	&__list
+		width: auto
+		font-size: 0
+		margin-left: -8px
+		margin-right: -8px
+	&__radio
+		display: inline-block
+		padding: 8px 8px 0
+		input[type="radio"]
+			display: none
+			&:checked + label
+				background-color: transparent
+				font-family: "OpenSansBold", sans-serif
+		label
+			width: 40px
+			height: 40px
+			border-radius: 2px
+			border: 1px solid #a1a1a1
+			background-color: #a1a1a1
+			font-size: 18px
+			display: block
+			line-height: 38px
+			text-align: center
+			color: #686868
+			cursor: pointer
