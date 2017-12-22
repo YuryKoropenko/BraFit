@@ -653,6 +653,7 @@
 		margin-left: -10px
 		margin-right: -10px
 		padding-top: 20px
+		@include clearfix
 	&__side
 		width: 33.333333%
 		float: left
@@ -699,7 +700,7 @@
 		margin-right: -8px
 	&__radio
 		display: inline-block
-		padding: 8px 8px 0
+		padding: 16px 8px 0
 		input[type="radio"]
 			display: none
 			&:checked + label
@@ -717,3 +718,240 @@
 			text-align: center
 			color: #686868
 			cursor: pointer
+	&__button
+		display: inline-block
+		padding: 0 10px
+		height: 50px
+		text-transform: uppercase
+		border: 1px solid #c6a9e6
+		background-color: #c6a9e6
+		font-size: 18px
+		color: #fff
+		line-height: 48px
+		border-radius: 2px
+		&:hover, &:focus, &:active
+			background-color: #fff
+			color: #c6a9e6
+			text-decoration: none
+		&-wp
+			padding-top: 25px
+	&__description
+		padding-top: 10px
+		b
+			text-transform: uppercase
+			color: #686868
+			font-family: "OpenSansBold", sans-serif
+			line-height: 36px
+			display: block
+		p
+			display: block
+			color: #686868
+			font-family: "OpenSansLight", sans-serif
+
+.p-complect,
+.p-favorite
+	&__title
+		display: inline-block
+		color: #686868
+		font-size: 24px
+		text-transform: uppercase
+		font-family: "OpenSansBold", sans-serif
+		letter-spacing: 0.1em
+	&__slider
+		.owl-dot
+			display: none
+		.owl-nav
+			div
+				transform: none
+				-webkit-transform: none
+				top: 118px
+				margin-top: 0
+			.owl-prev
+				left: 0
+			.owl-next
+				right: 0
+
+.p-basket
+	&__title
+		color: #686868
+		text-transform: uppercase
+		line-height: 36px
+		font-family: "OpenSansBold", sans-serif
+	&__table
+		width: 100%
+		border: 1px solid #d7d7d7
+		border-radius: 2px
+		table-layout: fixed
+		tr
+			td
+				&:nth-child(1)
+					width: 52%
+		&-top
+			background-color: #c6a9e6
+			td
+				&:first-child
+					padding-left: 8px
+					span
+						text-align: left
+			td > span
+				color: #fff
+				font-size: 18px
+				font-family: "OpenSansLight", sans-serif
+				display: block
+				line-height: 30px
+				text-align: center
+		&-line
+			border-bottom: 1px solid #d7d7d7
+			&:last-child
+				border-bottom: none
+			td
+				height: 205px
+				padding: 19px 0
+				position: relative
+				&::after
+					content: ''
+					width: 1px
+					height: 167px
+					position: absolute
+					right: 0
+					top: 19px
+					display: block
+					background-color: #d7d7d7
+				&:last-child
+					&::after
+						display: none
+			td > span
+				color: #2c2c2c
+				font-size: 18px
+				letter-spacing: 0.1em
+				position: absolute
+				top: 42px
+				left: 0
+				right: 0
+				display: block
+				text-align: center
+	&__img
+		display: block
+		width: 100%
+		height: auto
+		&-wp
+			width: 159px
+			overflow: hidden
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			height: 165px
+			display: block
+	&__description
+		position: absolute
+		left: 159px
+		top: 36px
+	&__subtitle
+		color: #686868
+		font-size: 18px
+		display: block
+	&__zav
+		display: block
+		font-size: 18px
+		text-transform: uppercase
+		color: #c6a9e6
+	&__art
+		font-size: 12px
+		line-height: 35px
+		color: #3a3a3a
+		letter-spacing: 0.075em
+		display: block
+	&__del
+		display: inline-block
+		padding: 0 16px
+		text-transform: uppercase
+		height: 30px
+		border-radius: 2px
+		background-color: #c6a9e6
+		line-height: 28px
+		border: 1px solid #c6a9e6
+		color: #fff
+		font-size: 18px
+		letter-spacing: 0.1em
+		margin-top: 20px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #c6a9e6
+			background-color: transparent
+
+	&__subprice
+		&::after
+			content: 'р.'
+	&__col
+		position: absolute
+		top: 45px
+		left: 50%
+		width: 68px
+		margin-left: -34px
+		@include clearfix
+		&-input
+			width: 36px
+			display: block
+			height: 16px
+			font-size: 18px
+			color: #2c2c2c
+			text-align: center
+			border: none
+			float: left
+	&__minus
+		height: 16px
+		width: 16px
+		border-radius: 2px
+		border: 1px solid #cccccc
+		display: block
+		color: #707070
+		position: relative
+		float: left
+		&::after
+			content: ''
+			display: block
+			width: 10px
+			height: 2px
+			position: absolute
+			left: 2px
+			top: 6px
+			background-color: #707070
+		&:hover
+			background-color: #ccc
+			&::after
+				background-color: #fff
+	&__plus
+		height: 16px
+		width: 16px
+		border-radius: 2px
+		border: 1px solid #cccccc
+		display: block
+		float: left
+		color: #707070
+		position: relative
+		&::after
+			content: ''
+			display: block
+			width: 10px
+			height: 2px
+			position: absolute
+			left: 2px
+			top: 6px
+			background-color: #707070
+		&::before
+			content: ''
+			width: 2px
+			height: 10px
+			display: block
+			position: absolute
+			left: 6px
+			top: 2px
+			background-color: #707070
+		&:hover
+			background-color: #ccc
+			&::after, &::before
+				background-color: #fff
+	&__subsum
+		&::after
+			content: 'р.'

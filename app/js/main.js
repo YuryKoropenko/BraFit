@@ -16,6 +16,34 @@ $(function() {
 		dotsContainer: '.p-card__pagin'
 	});
 
+	$('.p-complect__slider').owlCarousel({
+		loop:true,
+		nav:true,
+		margin:30,
+		responsive:{
+			0:{
+				items:2
+			},
+			767:{
+				items:3
+			}
+		}
+	});
+
+	$('.p-favorite__slider').owlCarousel({
+		loop:true,
+		nav:true,
+		margin:30,
+		responsive:{
+			0:{
+				items:2
+			},
+			767:{
+				items:3
+			}
+		}
+	});
+
 	/*инструкция*/
 	$('.p-filter__inst').fancybox();
 
