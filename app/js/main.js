@@ -72,4 +72,17 @@ $(function() {
 		return false;
 	});
 
+	if ($(window).width() < 991) {
+		$('.p-basket__price-text').text('Стоимость:')
+	}
+
+	$('.p-sposob__list1').children('.p-sposob__item').on('click', function() {
+		$('.p-sposob__list1 .p-sposob__item').removeClass('active');
+		$(this).addClass('active');
+	});
+	$('.p-sposob__list2').children('.p-sposob__item').on('click', function() {
+		$('.p-sposob__list2 .p-sposob__item').removeClass('active');
+		$(this).addClass('active');
+	});
+
 });

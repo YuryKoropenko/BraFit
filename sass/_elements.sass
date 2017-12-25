@@ -955,3 +955,214 @@
 	&__subsum
 		&::after
 			content: 'р.'
+	&__promo
+		padding-top: 25px
+		padding-bottom: 10px
+		span
+			color: #8b8b8b
+			font-size: 14px
+			letter-spacing: 0.1em
+			font-family: "OpenSansLight", sans-serif
+			display: block
+			padding-bottom: 15px
+		&-block
+			display: block
+			width: 100%
+			@include clearfix
+		&-input
+			display: block
+			height: 30px
+			border: 1px solid #e1e1e1
+			border-radius: 2px
+			float: left
+			padding: 0 5px
+			font-size: 14px
+			margin-right: 16px
+		&-button
+			display: block
+			height: 30px
+			border: 1px solid #c6a9e6
+			border-radius: 2px
+			background-color: #c6a9e6
+			line-height: 28px
+			float: left
+			color: #fff
+			padding: 0 5px
+			font-size: 14px
+			&:hover, &:focus, &:active
+				text-decoration: none
+				color: #c6a9e6
+				background-color: transparent
+	&__full
+		padding-top: 25px
+		text-align: right
+		padding-bottom: 10px
+	&__price
+		color: #2c2c2c
+		font-size: 18px
+		padding-bottom: 5px
+		letter-spacing: 0.1em
+		display: block
+		width: 100%
+		color: #2c2c2c
+		span
+			display: inline-block
+			padding: 0 30px
+			&:after
+				content: 'р.'
+		&-text
+			padding: 0 !important
+			&::after
+				display: none !important
+	&__button
+		display: inline-block
+		padding: 0 16px
+		border-radius: 2px
+		border: 1px solid #c6a9e6
+		height: 40px
+		background-color: #c6a9e6
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+		font-size: 18px
+		letter-spacing: 0.1em
+		line-height: 38px
+		&:hover
+			background-color: transparent
+			text-decoration: none
+			color: #c6a9e6
+.p-form
+	&__title
+		color: #686868
+		font-family: "OpenSansBold", sans-serif
+		text-transform: uppercase
+		display: block
+		padding-bottom: 22px
+	&__row
+		@include clearfix
+		padding-bottom: 20px
+		label
+			width: 20%
+			position: relative
+			height: 30px
+			display: block
+			float: left
+			span
+				font-size: 18px
+				color: #6d6d6d
+				line-height: 15px
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				-webkit-transform: translateY(-50%)
+				font-family: "OpenSansBold", sans-serif
+		&-des
+			padding-bottom: 40px
+			position: relative
+
+		input
+			height: 30px
+			border-radius: 2px
+			float: left
+			padding: 0 10px
+			border: 1px solid #d7d7d7
+			width: 80%
+			color: #6d6d6d
+			font-size: 14px
+	&__description
+		position: absolute
+		right: 30px
+		bottom: 20px
+		display: block
+		left: 0
+		text-align: right
+		line-height: 20px
+		font-size: 12px
+		color: #6d6d6d
+
+.p-sposob
+	&__title
+		color: #686868
+		text-transform: uppercase
+		font-family: "OpenSansBold", sans-serif
+		padding: 5px 0
+		border-bottom: 1px solid #c6a9e6
+	&__list
+		padding: 10px 0 30px
+	&__item
+		height: 95px
+		cursor: pointer
+		-moz-user-select: none
+		-khtml-user-select: none
+		user-select: none
+	&__item.active
+			.p-sposob__left
+				img
+					-webkit-box-shadow: 3px 3px 7px 0px rgba(194,194,194,1)
+					-moz-box-shadow: 3px 3px 7px 0px rgba(194,194,194,1)
+					box-shadow: 3px 3px 7px 0px rgba(194,194,194,1)
+			.p-sposob__center
+				span
+					font-family: "OpenSansBold", sans-serif
+					span
+						font-family: "OpenSansRegular", sans-serif
+				strong
+					font-family: "OpenSansBold", sans-serif
+
+	&__left
+		float: left
+		width: 11.1%
+		text-align: left
+		height: 95px
+		position: relative
+		img
+			width: 71px
+			height: auto
+			display: block
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			border-radius: 2px
+	&__center
+		float: left
+		width: 66.9%
+		text-align: left
+		height: 95px
+		position: relative
+		span
+			color: #6d6d6d
+			font-size: 18px
+			display: block
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			strong
+				color: #686868
+				font-size: 18px
+				display: block
+			span
+				position: static
+				font-size: 14px
+				color: #686868
+				display: block
+				transform: none
+				-webkit-transform: none
+
+	&__right
+		float: left
+		width: 22%
+		text-align: right
+		height: 95px
+		position: relative
+		p
+			font-size: 18px
+			color: #6d6d6d
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
