@@ -1042,7 +1042,7 @@
 		@include clearfix
 		padding-bottom: 20px
 		label
-			width: 20%
+			width: 25%
 			position: relative
 			height: 30px
 			display: block
@@ -1066,7 +1066,7 @@
 			float: left
 			padding: 0 10px
 			border: 1px solid #d7d7d7
-			width: 80%
+			width: 75%
 			color: #6d6d6d
 			font-size: 14px
 	&__description
@@ -1140,6 +1140,8 @@
 			top: 50%
 			transform: translateY(-50%)
 			-webkit-transform: translateY(-50%)
+			font-family: "OpenSansRegular", sans-serif
+			text-transform: none
 			strong
 				color: #686868
 				font-size: 18px
@@ -1166,3 +1168,162 @@
 			top: 50%
 			transform: translateY(-50%)
 			-webkit-transform: translateY(-50%)
+
+.p-contacts
+	&__title
+		color: #686868
+		text-transform: uppercase
+		font-family: "OpenSansBold", sans-serif
+		font-size: 24px
+		padding-bottom: 16px
+		display: block
+	&__town
+		font-size: 18px
+		color: #686868
+		font-family: "OpenSansBold", sans-serif
+		width: 195px
+		display: block
+		padding-bottom: 16px
+	&__list
+		display: block
+		width: 100%
+	&__item
+		position: relative
+		min-height: 40px
+		margin: 6px 0
+		color: #686868
+		font-family: "OpenSansBold", sans-serif
+		font-size: 18px
+		padding: 10px 0 10px 53px
+		span
+			font-family: "OpenSansRegular", sans-serif
+	&__icon
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		display: block
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -20px
+
+.p-map
+	iframe
+		display: block
+		width: 100%
+		height: 430px
+
+.p-bank
+	&__list
+		padding-bottom: 20px
+		width: 100%
+	&__item
+		font-size: 18px
+		letter-spacing: 0.1em
+		color: #6d6d6d
+		span
+			font-family: "OpenSansBold", sans-serif
+	&__img
+		display: block
+		max-width: 100%
+		&-wp
+			position: relative
+			display: inline-block
+	&__text
+		position: absolute
+		left: 25px
+		right: 25px
+		bottom: 25px
+		@include clearfix
+	&__left
+		width: 50%
+		float: left
+		color: #fff
+		font-size: 18px
+		font-family: "OpenSansBold", sans-serif
+		letter-spacing: 0.1em
+		line-height: 18px
+	&__right
+		width: 50%
+		text-align: right
+		float: right
+		color: #fff
+		line-height: 0
+		font-size: 48px
+		font-family: "OpenSansBold", sans-serif
+		letter-spacing: 0.1em
+
+input.personal-btn
+	display: inline-block
+	height: 40px
+	padding: 0 16px
+	line-height: 38px
+	border: 1px solid #c6a9e6
+	border-radius: 2px 
+	background-color: #c6a9e6
+	font-size: 18px
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 0.1em
+	width: auto
+	&:hover
+		text-decoration: none
+		background-color: transparent
+		color: #c6a9e6
+
+.p-password
+	&__title
+		color: #c3a6e3
+		font-size: 18px
+		font-family: "OpenSansBold", sans-serif
+		display: block
+		padding-bottom: 16px
+
+.p-history.active
+	padding-bottom: 28px
+	.page__p-basket
+		display: block !important
+	.p-history__item
+		background-color: #c6a9e6
+		color: #fff
+		&::after
+			content: ''
+			@include triangle(37px, #fff, up)
+			border-top: none
+
+.p-history
+	margin: 1px 0
+	.p-basket__table
+		border-top: none
+		-moz-user-select: none
+		-khtml-user-select: none
+		user-select: none
+	.page__p-basket
+		display: none
+	.p-basket__table-top
+		background-color: transparent
+	.p-basket__table-top td > span
+		color: #686868
+	&__item
+		padding: 5px 80px 5px 10px
+		font-size: 16px
+		line-height: 23px
+		background-color: #ebebeb
+		border: 1px solid #d7d7d7
+		color: #686868
+		position: relative
+		cursor: pointer
+		&::after
+			content: ''
+			position: absolute
+			right: 22px
+			top: 50%
+			transform: translateY(-50%)
+			@include triangle(37px, #6d6d6d, down)
+	&__name
+		display: block
+	&__sum
+		display: block

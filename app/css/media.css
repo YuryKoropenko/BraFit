@@ -154,7 +154,29 @@
     width: 34.722%;
   }
   .p-sposob__list2 .p-sposob__center {
-    width: 84.444%;
+    width: 75.444;
+  }
+  .p-contacts__list {
+    padding-bottom: 40px;
+  }
+  .p-contacts__list::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .p-contacts__item {
+    width: 44%;
+    float: left;
+  }
+  .p-contacts__town {
+    width: 100%;
+  }
+  .page__contacts {
+    padding-bottom: 40px;
+  }
+  .page__p-bank {
+    text-align: left;
+    padding-bottom: 22px;
   }
   /**/
 }
@@ -417,6 +439,19 @@
   .p-sposob__list2 .p-sposob__center {
     width: 84.444%;
   }
+  .p-contacts__item {
+    width: 100%;
+  }
+  .page__p-password .p-form__row label {
+    width: 40%;
+  }
+  .page__p-password .p-form__row input {
+    width: 60%;
+  }
+  .header__h-mobmenu {
+    position: relative;
+    z-index: 99;
+  }
   /**/
 }
 
@@ -465,6 +500,18 @@
   }
   .p-sposob__list2 .p-sposob__center {
     width: 68%;
+  }
+  .p-form__row label span {
+    font-size: 13px;
+  }
+  .p-form__row input {
+    font-size: 13px;
+  }
+  .p-basket__button {
+    width: 100%;
+  }
+  .personal-btn {
+    width: 100% !important;
   }
   /**/
 }
