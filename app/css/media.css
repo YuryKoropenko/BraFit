@@ -14,6 +14,9 @@
   .p-slider__item {
     background-position: 110% center;
   }
+  .b-filter__list-2 {
+    width: 755px;
+  }
   /**/
 }
 
@@ -178,6 +181,9 @@
     text-align: left;
     padding-bottom: 22px;
   }
+  .b-filter__list-2 {
+    width: 572px;
+  }
   /**/
 }
 
@@ -310,8 +316,9 @@
   .header__bottom {
     margin-bottom: 40px;
   }
-  .b-filter__list {
-    width: 290px;
+  .b-filter__list-1,
+  .b-filter__list-2 {
+    width: 100%;
     overflow-x: scroll;
   }
   .b-filter {
@@ -437,7 +444,7 @@
     width: 25%;
   }
   .p-sposob__list2 .p-sposob__center {
-    width: 84.444%;
+    width: 75.444%;
   }
   .p-contacts__item {
     width: 100%;
@@ -451,6 +458,21 @@
   .header__h-mobmenu {
     position: relative;
     z-index: 99;
+  }
+  .page__p-rae p,
+  .page__p-rae span {
+    font-size: 16px;
+  }
+  .page__p-rae h2,
+  .page__p-rae b {
+    font-size: 22px;
+  }
+  .page__p-rae strong {
+    font-size: 18px;
+  }
+  .p-card-left {
+    width: 290px;
+    margin: 0 auto;
   }
   /**/
 }
@@ -486,14 +508,17 @@
     margin-left: -32px;
   }
   .p-sposob__left {
-    width: 32%;
+    width: 26%;
   }
   .p-sposob__center {
-    width: 68%;
+    width: 74%;
   }
   .p-sposob__right {
-    width: 100%;
-    text-align: center;
+    text-align: left;
+    height: auto;
+    width: 74%;
+    margin-left: 26%;
+    margin-bottom: 25px;
   }
   .p-sposob__right p {
     left: 0;
@@ -512,6 +537,11 @@
   }
   .personal-btn {
     width: 100% !important;
+  }
+  .p-basket__price {
+    margin: 15px 0;
+    text-align: center;
+    display: block;
   }
   /**/
 }

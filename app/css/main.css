@@ -484,6 +484,9 @@ body {
   display: flex;
   justify-content: space-between;
   -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
   padding: 0 40px;
 }
 
@@ -856,6 +859,12 @@ body {
   line-height: 14px;
   letter-spacing: 0.025em;
   display: block;
+  color: #686868;
+}
+
+.f-nav__phone:hover, .f-nav__phone:focus, .f-nav__phone:active {
+  text-decoration: none;
+  color: #686868;
 }
 
 .f-nav__phone::before {
@@ -878,6 +887,12 @@ body {
   line-height: 14px;
   letter-spacing: 0.025em;
   display: block;
+  color: #686868;
+}
+
+.f-nav__email:hover, .f-nav__email:focus, .f-nav__email:active {
+  text-decoration: none;
+  color: #686868;
 }
 
 .f-nav__email::before {
@@ -1009,6 +1024,9 @@ body {
   display: flex;
   justify-content: space-between;
   -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
   background-color: #c6a9e6;
 }
 
@@ -1056,12 +1074,24 @@ body {
 }
 
 .b-filter__list {
+  display: none;
+}
+
+.b-filter__list-2 {
   position: absolute;
   left: 0;
   top: 100%;
   background-color: #f6f6f6;
   z-index: 10;
-  display: none;
+  width: 803px;
+}
+
+.b-filter__list-1 {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #f6f6f6;
+  z-index: 10;
 }
 
 .b-filter__subitem {
@@ -1979,14 +2009,24 @@ body {
   position: relative;
   min-height: 40px;
   margin: 6px 0;
-  color: #686868;
   font-family: "OpenSansBold", sans-serif;
-  font-size: 18px;
   padding: 10px 0 10px 53px;
+  display: block;
+}
+
+.p-contacts__item a {
+  color: #686868;
+  font-size: 18px;
+}
+
+.p-contacts__item a:hover, .p-contacts__item a:focus, .p-contacts__item a:active {
+  color: #686868;
+  text-decoration: none;
 }
 
 .p-contacts__item span {
   font-family: "OpenSansRegular", sans-serif;
+  color: #686868;
 }
 
 .p-contacts__icon {

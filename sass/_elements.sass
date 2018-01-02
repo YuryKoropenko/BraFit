@@ -85,6 +85,9 @@
 	display: flex
 	justify-content: space-between
 	-webkit-justify-content: space-between
+	-moz-justify-content: space-between
+	-ms-justify-content: space-between
+	-o-justify-content: space-between
 	padding: 0 40px
 	&__item
 		display: inline-block
@@ -357,6 +360,10 @@
 		line-height: 14px
 		letter-spacing: 0.025em
 		display: block
+		color: #686868
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #686868
 		&::before
 			content: ''
 			width: 16px
@@ -368,7 +375,6 @@
 			position: absolute
 			left: 0
 			top: 0
-
 	&__email
 		padding-left: 22px
 		position: relative
@@ -376,6 +382,10 @@
 		line-height: 14px
 		letter-spacing: 0.025em
 		display: block
+		color: #686868
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #686868
 		&::before
 			content: ''
 			width: 16px
@@ -475,6 +485,9 @@
 	display: flex
 	justify-content: space-between
 	-webkit-justify-content: space-between
+	-moz-justify-content: space-between
+	-ms-justify-content: space-between
+	-o-justify-content: space-between
 	background-color: #c6a9e6
 	&__item
 		padding: 0 20px
@@ -509,12 +522,20 @@
 			text-decoration: none
 			color: #fff
 	&__list
-		position: absolute
-		left: 0
-		top: 100%
-		background-color: #f6f6f6
-		z-index: 10
 		display: none
+		&-2
+			position: absolute
+			left: 0
+			top: 100%
+			background-color: #f6f6f6
+			z-index: 10
+			width: 803px
+		&-1
+			position: absolute
+			left: 0
+			top: 100%
+			background-color: #f6f6f6
+			z-index: 10
 	&__subitem
 		border-bottom: 1px solid #ebebeb
 		width: 298px
@@ -1191,12 +1212,19 @@
 		position: relative
 		min-height: 40px
 		margin: 6px 0
-		color: #686868
 		font-family: "OpenSansBold", sans-serif
-		font-size: 18px
+		
 		padding: 10px 0 10px 53px
+		display: block
+		a
+			color: #686868
+			font-size: 18px
+			&:hover, &:focus, &:active
+				color: #686868
+				text-decoration: none
 		span
 			font-family: "OpenSansRegular", sans-serif
+			color: #686868
 	&__icon
 		width: 40px
 		height: 40px
