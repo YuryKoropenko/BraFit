@@ -1086,7 +1086,7 @@ body {
   width: 803px;
 }
 
-.b-filter__list-1 {
+.b-filter__list-1, .b-filter__list-3, .b-filter__list-4, .b-filter__list-5, .b-filter__list-6 {
   position: absolute;
   left: 0;
   top: 100%;
