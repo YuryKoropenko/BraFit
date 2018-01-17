@@ -225,4 +225,14 @@ $(function() {
 		$(this).parent().toggleClass('active');
 	});
 
+	$('.h-nav__item-razm .h-nav__link').on('click', function() {
+		$(this).parent().children('.b-filter__list').slideToggle();
+		$(document).click(function(event) {
+			if ($(event.target).closest('.b-filter__list').length) return;
+				$('.b-filter__list').slideUp();
+				event.stopPropagation();
+			});
+		return false;
+	});
+
 });
